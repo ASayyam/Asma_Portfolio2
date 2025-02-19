@@ -1,57 +1,37 @@
 "use client";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-
 const links = [
-{
-    name : "home",
-    path : "/",
-},
-{
+  { name: "home", path: "/" },
+  { name: "services", path: "/services" },
+  { name: "projects", path: "/projects" },
+  { name: "contact", path: "/contact" },
+];
 
-    name : "services",
-    path : "/services",
-},
-{
-
-    name : "resume",
-    path : "/resume",
-},
-// {
-
-//     name : "work",
-//    path : "/work",
-//  },
-{
-
-    name : "contact",
-    path : "/contact",
-},
-]
 const Nav = () => {
-    const pathname = usePathname();
-    console.log(pathname);
+  const pathname = usePathname();
+
   return (
-  <nav className= "flex gap-8">
-   {links.map((link, index) => {
-    return (
-    <Link 
-    href= {link.path}
-    key= {index} 
-    className= {`${
-        link.path === pathname && "text-accent border-b-2 border-accent"
-        } capitalize font-medium hover:text-accent transition-all`}
+    <nav className="flex gap-6 h-10 items-center">
+      {links.map(({ name, path }, index) => (
+        <Link
+          key={index}
+          href={path}
+          className={`capitalize font-medium hover:text-accent transition-all ${
+            path === pathname ? "text-accent border-b-2 border-accent" : ""
+          }`}
         >
-        {link.name}
+          {name}
         </Link>
-         );
-     })}
-  </nav>
+      ))}
+    </nav>
   );
 };
 
 export default Nav;
 
 
-/*code of line 36 and 43 44 is not working...in general css is not working..seems like */
+
+
