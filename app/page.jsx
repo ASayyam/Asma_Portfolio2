@@ -14,7 +14,7 @@ const Home = () => {
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=jetbrainsMono&size=37&duration=650&pause=1000&color=3EF775&random=false&width=505&lines=Hello+I'm+Asma+Sayyam" alt="Typing SVG" /></a>
 </h1>
 <p className="max-w-[500px] mb-9 text-white/80">
-As a passionate Agentic AI Engineer, I bring creativity, precision, and a commitment to excellence to every project I undertake. Whether it's designing intuitive user interfaces or architecting robust frontend backend systems. My dedication to continuous learning and staying abreast of industry trends allows me to deliver solutions that not only meet but exceed client expectations. Let's collaborate to transform your vision into reality and elevate your digital presence.
+As a passionate Agentic AI Engineer, I bring creativity, precision, and a commitment to excellence to every project I undertake. Whether it&apos;s designing intuitive user interfaces or architecting robust frontend backend systems. My dedication to continuous learning and staying abreast of industry trends allows me to deliver solutions that not only meet but exceed client expectations. Let&apos;s collaborate to transform your vision into reality and elevate your digital presence.
 </p>
 <div className="flex flex-col xl:flex-row items-center gap-8">
 
