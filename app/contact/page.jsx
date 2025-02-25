@@ -41,7 +41,7 @@ const Contact = () => {
         opacity: 1,
         transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
       }}
-      className="py-6"
+      className="pt-32 pb-10"
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-[30px]">
@@ -50,7 +50,9 @@ const Contact = () => {
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
               <h3 className="text-3xl text-accent">{"Let's work together"}</h3>
               <p className="text-white/60">
-                {"Let's build the future together! As an agentic AI developer, I specialize in creating intelligent, autonomous solutions that enhance efficiency and innovation. Whether you're looking for AI-driven applications, automation tools, or cutting-edge web solutions, I'm here to help. Reach out, and let's turn your vision into reality!"}
+                {
+                  "Let's build the future together! As an agentic AI developer, I specialize in creating intelligent, autonomous solutions that enhance efficiency and innovation. Whether you're looking for AI-driven applications, automation tools, or cutting-edge web solutions, I'm here to help. Reach out, and let's turn your vision into reality!"
+                }
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Input type="text" placeholder="Firstname" />
@@ -65,18 +67,31 @@ const Contact = () => {
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>
-                    <SelectItem value="frontend">Frontend development</SelectItem>
+                    <SelectItem value="frontend">
+                      Frontend development
+                    </SelectItem>
                     <SelectItem value="backend">Backend development</SelectItem>
-                    <SelectItem value="fullstack">Fullstack development</SelectItem>
-                    <SelectItem value="agentic-ai">Agentic AI development</SelectItem>
-                    <SelectItem value="custom-ai">Customized AI Solutions</SelectItem>
+                    <SelectItem value="fullstack">
+                      Fullstack development
+                    </SelectItem>
+                    <SelectItem value="agentic-ai">
+                      Agentic AI development
+                    </SelectItem>
+                    <SelectItem value="custom-ai">
+                      Customized AI Solutions
+                    </SelectItem>
                     <SelectItem value="custom-gpt">Customized GPT</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
 
-              <Textarea className="h-[200px]" placeholder="Type your message here." />
-              <Button size="md" className="max-w-40">Send message</Button>
+              <Textarea
+                className="h-[200px]"
+                placeholder="Type your message here."
+              />
+              <Button size="md" className="max-w-40">
+                Send message
+              </Button>
             </form>
           </div>
 

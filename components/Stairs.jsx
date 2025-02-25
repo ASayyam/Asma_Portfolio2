@@ -13,7 +13,6 @@
 // },
 // };
 
-
 // const reverseIndex = (index) => {
 
 //     const totalSteps = 6;
@@ -21,16 +20,16 @@
 
 // }
 // const Stairs = () => {
-//   return 
-//   <> 
+//   return
+//   <>
 //  {[...Array(6)].map((_, index) =>{
 //     return (
-// <motion.div 
-// key={index} 
+// <motion.div
+// key={index}
 // variants={stairAnimation}
 // initial="initial"
-// animate="animate" 
-// exit="exit" 
+// animate="animate"
+// exit="exit"
 // transition= {{
 //     duration:0.4,
 //     ease: "easeInOut",

@@ -58,7 +58,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
+    <section className="min-h-[80vh] flex flex-col justify-center pt-32">
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0 }}
@@ -91,7 +91,7 @@ const Projects = () => {
               <h2 className="text-[28px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
                 {project.title}
               </h2>
-              <p className="text-white/60">{project.description}</p>
+              <p className="text-white/60 text-justify">{project.description}</p>
               <div className="border-b border-white/20 w-full"></div>
             </div>
           ))}
@@ -102,6 +102,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-
-

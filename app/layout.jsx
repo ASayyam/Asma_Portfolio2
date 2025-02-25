@@ -21,11 +21,10 @@ export default function RootLayout({
   children }) {
   return (
     <html lang="en">
-      <body className={JetBrainsMono.variable}>
+      <body className={`${JetBrainsMono.variable} relative`}>
         <Header />
         <StairTransition>{children}</StairTransition>
-        <PageTransition>{children}</PageTransition> 
-             
+        <PageTransition>{children}</PageTransition>  
       </body>
     </html>
   );
