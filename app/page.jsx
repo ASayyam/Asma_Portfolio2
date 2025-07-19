@@ -13,13 +13,13 @@ const Home = () => {
 <h1 className="h1 mt-5"  >
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=jetbrainsMono&size=37&duration=650&pause=1000&color=3EF775&random=false&width=505&lines=Hello+I'm+Asma+Sayyam" alt="Typing SVG" /></a>
 </h1>
-<p className="max-w-[500px] mb-9 text-white/80">
+<p className="max-w-[500px] mb-9 text-white/80 text-justify">
 As a passionate Full‑Stack Developer and Agentic AI Engineer, I blend creativity with technical precision to build seamless, scalable digital experiences. From crafting responsive frontends in React and Next.js to engineering robust Django backends and AI-powered applications, I thrive on transforming complex ideas into user-focused solutions. My commitment to lifelong learning and hands-on experimentation with modern tools—like Tailwind CSS, PostgreSQL, and OpenAI SDKs—ensures that I stay at the forefront of tech innovation. Let’s collaborate to bring your vision to life and create solutions that stand out in a fast-evolving digital world.
 </p>
 <div className="flex flex-col xl:flex-row items-center gap-8">
 
  
-  <a href="" download>   # add the link of the CV google doc here
+  <a href="" download>  
   <Button variant="outline" size="lg" className="text-accent uppercase flex items-center gap-2 border">
     <span>Download CV</span>
     <FiDownload className="text-xl"/>
