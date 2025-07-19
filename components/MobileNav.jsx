@@ -1,9 +1,12 @@
-// "use client"
 
-// import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
-// import { usePathname } from 'next/navigation';
+
+// "use client";
+
+// import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+// import { usePathname } from "next/navigation";
 // import Link from "next/link";
-// import { CiMenuFries } from 'react-icons/ci';
+// import { CiMenuFries } from "react-icons/ci";
+// import { useState } from "react";
 
 // const links = [
 //     { name: "home", path: "/" },
@@ -15,18 +18,24 @@
 
 // const MobileNav = () => {
 //     const pathname = usePathname();
+//     const [open, setOpen] = useState(false);
+
+//     const closeMenu = () => setOpen(false);
 
 //     return (
-//         <Sheet>
-//             <SheetTrigger className='flex justify-center items-center'>
+//         <Sheet open={open} onOpenChange={setOpen}>
+//             <SheetTrigger className="flex justify-center items-center">
 //                 <CiMenuFries className="text-[32px] text-accent" />
 //             </SheetTrigger>
-//             <SheetContent className='flex flex-col items-center'>
+//             <SheetContent 
+//                 side="right"  // ✅ Opens from the right side
+//                 className="flex flex-col items-center overflow-y-auto"
+//             >
 //                 {/* Logo Section */}
-//                 <div className='mt-32 mb-40 text-center text-2xl'>
-//                     <Link href="/">
-//                         <h1 className='text-4xl font-semibold'>
-//                             Asma Sayyam<span className='text-accent'>.</span>
+//                 <div className="mt-20 mb-10 text-center text-2xl">
+//                     <Link href="/" onClick={closeMenu}>
+//                         <h1 className="text-4xl font-semibold">
+//                             Asma Sayyam<span className="text-accent">.</span>
 //                         </h1>
 //                     </Link>
 //                 </div>
@@ -40,6 +49,7 @@
 //                             className={`text-xl capitalize transition-all hover:text-accent ${
 //                                 link.path === pathname ? "text-accent border-b-2 border-accent" : ""
 //                             }`}
+//                             onClick={closeMenu} // ✅ Closes menu when clicking a link
 //                         >
 //                             {link.name}
 //                         </Link>
@@ -48,7 +58,7 @@
 //             </SheetContent>
 //         </Sheet>
 //     );
-// }
+// };
 
 // export default MobileNav;
 
@@ -113,4 +123,3 @@ const MobileNav = () => {
 };
 
 export default MobileNav;
-

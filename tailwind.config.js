@@ -8,6 +8,18 @@ const config = {
     './app/**/*.{js,jsx}',
     './src/**/*.{js,jsx}',
   ],
+  // module.exports = {
+  //   content: [
+  //     "./pages/**/*.{js,ts,jsx,tsx}",
+  //     "./components/**/*.{js,ts,jsx,tsx}",
+  //     "./app/**/*.{js,ts,jsx,tsx}",
+  //   ],
+  //   theme: {
+  //     extend: {},
+  //   },
+  //   plugins: [],
+  // };
+  
   prefix: "",
   theme: {
     container: {
@@ -52,3 +64,4 @@ const config = {
 } satisfies Config
 
 export default config
+

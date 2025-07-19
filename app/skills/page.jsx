@@ -1,11 +1,10 @@
 'use client';
-
 import { motion } from 'framer-motion';
 
 const skills = [
-  'Education Leadership', 'Teaching Methodologies', 'Curriculum Development',
-  'Agentic AI', 'Generative AI', 'TypeScript', 'Next.js', 'Python',
-  'FastAPI', 'Azure Deployment', 'Docker', 'SQL', 'PostgreSQL', 'Tailwind CSS'
+   'Generative AI', 'TypeScript', 'Next.js', 'Python',
+  'FastAPI', 'Azure Deployment', 'Docker', 'SQL', 'PostgreSQL', 'Postman', 'Tailwind CSS', 'Education Leadership', 'Teaching Methodologies', 'Curriculum Development', 'AI Model Deployment',   'Team Leadership', 'Problem Solving', 'Communication Skills', 'Collaboration', 'Continuous Learning', 'Adaptability', 'Time Management', 'Web Development', 'Software Development', 'API Development', 'Cloud Computing', 'DevOps Practices', 
+  
 ];
 
 export default function Page() {

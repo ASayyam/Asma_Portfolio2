@@ -66,8 +66,7 @@ const Contact = () => {
                 <SelectContent>
                   <SelectGroup>
                     <SelectItem value="frontend">Frontend development</SelectItem>
-                    <SelectItem value="backend">Backend development</SelectItem>
-                    <SelectItem value="fullstack">Fullstack development</SelectItem>
+                    <SelectItem value="fullstack">Fullstack Web Development</SelectItem>
                     <SelectItem value="agentic-ai">Agentic AI development</SelectItem>
                     <SelectItem value="custom-ai">Customized AI Solutions</SelectItem>
                     <SelectItem value="custom-gpt">Customized GPT</SelectItem>

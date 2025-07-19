@@ -1,3 +1,5 @@
+
+
 // "use client"
 // import {AnimatePresence, motion} from "framer-motion";
 // import { usePathname } from "next/navigation"; 
@@ -21,7 +23,6 @@
 // };
 
 // export default PageTransition;
-
 "use client"
 import {AnimatePresence, motion} from "framer-motion";
 import { usePathname } from "next/navigation"; 
